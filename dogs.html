@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dogs Page</title>
+  <link rel="stylesheet" href="dogs.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+      
+    </ul>
+  </nav>
+
+  <h1>Random Dog Carousel</h1>
+  <div id="dogCarousel" class="slider"></div>
+
+  <h2>Dog Breeds</h2>
+  <div id="breedButtons"></div>
+
+  <div id="breedInfo" style="display: none; margin-top: 30px; padding: 20px; background-color: #fff; border: 1px solid #ccc; border-radius: 8px;"></div>
+
+  <div class="audio-box">
+    <p>Try saying: <strong>Load Dog Breed Labrador Retriever</strong></p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/simple-slider@1.0.0/dist/simpleslider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="dogs.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | Voice App</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Welcome to the Voice Command App</h1>
+    <button class="custom-btn" onclick="window.location.href='stocks.html'">Stocks</button>
+    <button class="custom-btn" onclick="window.location.href='dogs.html'">Dogs</button>
+
+    <div id="quoteBox" style="margin-top: 40px; text-align: center; background: #eaeaea; padding: 20px; border-radius: 10px; max-width: 600px; margin-left: auto; margin-right: auto;">
+      <h2>Quote of the Day</h2>
+      <p>Sorry, we can't display the quote because the API requires a paid subscription.</p>
+    </div>
+  </main>
+
+  <div id="audio-instructions" class="audio-box">
+    <h3>Voice Commands:</h3>
+    <ul>
+      <li>Say "Hello"</li>
+      <li>Say "Change the color to *color* "</li>
+      <li>Say "Navigate to *page* "</li>
+    </ul>
+    <button onclick="startListening()">Turn On Audio</button>
+    <button onclick="stopListening()">Turn Off Audio</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
